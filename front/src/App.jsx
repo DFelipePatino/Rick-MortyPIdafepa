@@ -7,6 +7,7 @@ import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import About from './components/About'
 import Detail from './components/Detail'
 import Form from './components/Form';
+import Favorites from './components/Favorites';
 const EMAIL = 'dafepa10c29@gmail.com';
 const PASSWORD = 'Henry2023';
 
@@ -68,10 +69,13 @@ const App = () => {
                element={<About />}>
             </Route>
             <Route path='/'
-               element={<Form login={login}/>}>
+               element={<Form login={login} />}>
             </Route>
             <Route path='/detail/:id'
                element={<Detail />}>
+            </Route>
+            <Route path='/favorites'
+               element={<Favorites />}>
             </Route>
          </Routes>
 

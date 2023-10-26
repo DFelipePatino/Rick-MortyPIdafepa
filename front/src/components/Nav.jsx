@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Nav = ({ onSearch }) => {
 
 
-    
+
     return (
         <div>
 
@@ -20,6 +20,10 @@ const Nav = ({ onSearch }) => {
 
             <Link to='/'>
                 <button>Log In</button>
+            </Link>
+
+            <Link to='/favorites'>
+                <button>Favorites</button>
             </Link>
 
             <SearchBar onSearch={onSearch} />
